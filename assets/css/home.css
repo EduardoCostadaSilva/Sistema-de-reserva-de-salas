@@ -1,0 +1,56 @@
+/* Estilos para as salas */
+.room {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+ 
+.available {
+    background-color: #d4f7e1;
+    color: #3aa344;
+}
+ 
+.reserved {
+    background-color: #f7e0d4;
+    color: #a3443a;
+}
+ 
+.room:hover {
+    background-color: #e0f7d4;
+}
+ 
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+ 
+header {
+    background-color: #ffaa33;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+ 
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+ 
+.calendar {
+    flex: 1;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #fff4d4;
+}
+ 
+.room-list {
+    flex: 1;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #fff4d4;
+}

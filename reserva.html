@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/reserva.css">
+    <title>Agendamento de Sala</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Agendamento de Sala</h1>
+        <form id="bookingForm">
+            <label for="room">Sala:</label>
+            <select id="room" required>
+                <option value="sala1">Sala 1</option>
+                <option value="sala2">Sala 2</option>
+                <option value="sala3">Sala 3</option>
+            </select>
+            <label for="date">Data:</label>
+            <input type="date" id="date" required>
+            <label for="time">Horário:</label>
+            <input type="time" id="time" required>
+
+            <button type="submit" onclick="adicionarReserva()">Adicionar Reserva</button>
+        </form>
+        <div id="confirmation" style="display: none;">
+            <p>Sua sala foi agendada com sucesso!</p>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href="Home.html"><button>Voltar</button></a>
+    </div>
+      
+    <h2>Reservas Registradas</h2>
+    <div id="reservasList"></div>
+
+    <script src="assets/js/booking.js"></script>
+    <script src="assets/js/historico.js"></script>
+</body>
+</html>
